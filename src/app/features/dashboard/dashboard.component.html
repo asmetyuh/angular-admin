@@ -1,11 +1,5 @@
-<div class="container">
-    <div class="flex-item">
-      <div style="display: block;">
-        <canvas baseChart width="1000" height="500"
-                [data]="chartData"
-                [options]="chartOptions"
-                [type]="chartType"
-        ></canvas>
-      </div>
-    </div>
-  </div>
+<button style="margin: 40px;" mat-button mat-raised-button color="primary" routerLink="users">
+    Users
+</button>
+
+<h1 *ngIf="showText">{{user.id}} {{user.name}}</h1>

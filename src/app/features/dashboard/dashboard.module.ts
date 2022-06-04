@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule, DatePipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
 import { SommedashboardComponent } from './components/sommedashboardcomponent/sommedashboardcomponent.component';
-import { NgxMaskModule } from 'ngx-mask';
-import { FormsModule } from '@angular/forms';
-import { NgChartsModule } from 'ng2-charts';
+import { UsersService } from 'src/app/shared/services/users.service';
+import { UsersModule } from '../users/users.module';
+import { UsersComponent } from '../users/users/users.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,9 @@ import { NgChartsModule } from 'ng2-charts';
   ],
   imports: [
     CommonModule,
-    NgxMaskModule.forRoot(),
-    FormsModule,
-    NgChartsModule
+    UsersModule,
+    RouterModule
   ],
-  providers:[DatePipe]
+  providers:[UsersService]
 })
 export class DashboardModule { }
