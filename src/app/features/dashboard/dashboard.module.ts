@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
 import { SommedashboardComponent } from './components/sommedashboardcomponent/sommedashboardcomponent.component';
-
-
+import { NgxMaskModule } from 'ngx-mask';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,10 @@ import { SommedashboardComponent } from './components/sommedashboardcomponent/so
     SommedashboardComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    NgxMaskModule.forRoot(),
+    FormsModule
+  ],
+  providers:[DatePipe]
 })
 export class DashboardModule { }
