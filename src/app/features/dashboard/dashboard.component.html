@@ -1,33 +1,11 @@
-<h1>Some date is: {{ someDate }}</h1>
-
-<h1>0 element is: {{ user.transactions[0].id }}</h1>
-<h1>1 element is: {{ user.transactions[1].id }}</h1>
-<h1>2 element is: {{ user.transactions[2].id }}</h1>
-
-<h2>Copy by reference:</h2>
-
-
-<p *ngFor="let item of copyByReference">{{ item }}</p>
-
-
-
-<h2>Copy by value:</h2>
-
-<p *ngFor="let item of copyByValue">{{ item }}</p>
-
-<h2>Includes</h2>
-<div *ngFor="let include of includes">
-    <p [ngClass]="{red:include}">{{ include }}</p>
-</div>
-
-
-<h2>Every</h2>
-<p [ngClass]="{red:every}">{{ every }}</p>
-
-
-<h2>Some</h2>
-<p [ngClass]="{red:some}">{{ some }}</p>
-
-<h2>Foreach</h2>
-
-<p *ngFor="let item of arrayWithThreeStrings">{{ item }}</p>
+<div class="container">
+    <div class="flex-item">
+      <div style="display: block;">
+        <canvas baseChart width="1000" height="500"
+                [data]="chartData"
+                [options]="chartOptions"
+                [type]="chartType"
+        ></canvas>
+      </div>
+    </div>
+  </div>
