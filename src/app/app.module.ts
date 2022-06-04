@@ -20,7 +20,6 @@ import { FormsModule } from '@angular/forms';
     DashboardModule,
     SettingsModule,
     FormsModule,
-    UsersModule,
     NgxMaskModule,
     BrowserAnimationsModule
   ],
