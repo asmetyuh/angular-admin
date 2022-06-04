@@ -4,7 +4,6 @@ import { DashboardComponent } from './dashboard.component';
 import { SommedashboardComponent } from './components/sommedashboardcomponent/sommedashboardcomponent.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { FormsModule } from '@angular/forms';
-import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -14,8 +13,7 @@ import { NgChartsModule } from 'ng2-charts';
   imports: [
     CommonModule,
     NgxMaskModule.forRoot(),
-    FormsModule,
-    NgChartsModule
+    FormsModule
   ],
   providers:[DatePipe]
 })
